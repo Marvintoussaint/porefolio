@@ -13,8 +13,13 @@ import org.jetbrains.exposed.sql.*
 
 fun Application.configureRouting() {
     routing {
+
         get("/") {
             call.respondText("Hello World!")
+        }
+
+        get("/test"){
+            call.respondText("HELLO WORLD This is work !")
         }
     }
 }
