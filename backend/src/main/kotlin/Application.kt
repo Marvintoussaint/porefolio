@@ -1,6 +1,5 @@
 package com.tinkerhouse
 
-import com.tinkerhouse.route.userRoutes
 import io.ktor.server.application.*
 import io.ktor.server.netty.EngineMain
 import io.ktor.server.routing.routing
@@ -19,6 +18,6 @@ fun Application.module() {
     DatabaseFactory.init()
 
     routing {
-        userRoutes()
+
     }
 }

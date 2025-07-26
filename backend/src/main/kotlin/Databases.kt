@@ -1,5 +1,6 @@
 package com.tinkerhouse
 
+import com.tinkerhouse.model.Products
 import com.tinkerhouse.model.Users
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
@@ -27,6 +28,7 @@ object DatabaseFactory {
 
         transaction {
             SchemaUtils.create(Users)
+            SchemaUtils.create(Products)
         }
     }
 }
